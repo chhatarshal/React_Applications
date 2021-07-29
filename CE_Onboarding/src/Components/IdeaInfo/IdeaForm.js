@@ -10,8 +10,41 @@ const IdeaForm = (props) => {
         console.log(event);
         event.preventDefault();        
         props.sendIdea(idea);
+        const IdeanObj = {
+            "title" : idea,
+            "detail": idea
+        }       
+        addIdea(IdeanObj);
         setIdea('');
     }
+
+    getAllIdeas();
+
+    async function addIdea(idea) {
+        console.log('===========   ' + JSON.stringify(idea));
+        const response = await fetch('http://localhost:8099/idea/saveIdea', {
+          method: 'POST',
+          body: JSON.stringify(idea),
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization' : 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyOCIsImV4cCI6MTYyNzYwNTkwNiwiaWF0IjoxNjI3NTY5OTA2fQ._FKsy1f7w7WQAVyua1_TY2paIMKuZM7QknBwTvFrXoM'
+          }
+        });
+        console.log('response...' + response);
+    }
+
+    async function getAllIdeas() {
+        console.log('===========   ' + JSON.stringify(idea));
+        const response = await fetch('http://localhost:8099/idea/getIdeas', {
+          method: 'GET',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization' : 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyOCIsImV4cCI6MTYyNzYwNTkwNiwiaWF0IjoxNjI3NTY5OTA2fQ._FKsy1f7w7WQAVyua1_TY2paIMKuZM7QknBwTvFrXoM'
+          }
+        });
+        console.log('response... all ideas' + JSON.stringify(response));
+    }
+ 
 
     const onChageInputHandler = (event) => {
         console.log(event.target.value);
