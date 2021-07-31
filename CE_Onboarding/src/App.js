@@ -17,6 +17,35 @@ function App({ Component }) {
         return [...oldValues, valueOfIdea];
     });
   }
+
+  getAll();
+
+  async function getAll(idea) {
+
+      const myHeaders = new Headers({
+        'Content-Type': 'application/json',
+        'Authorization' : 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyOCIsImV4cCI6MTYyNzc3Nzk4OSwiaWF0IjoxNjI3NzQxOTg5fQ.4KA4u8QcAUWNNy8xVDhlpjg8Zm8E26g2ZNW_v_Z6-84'
+      });
+
+      const myRequest = new Request('http://localhost:8099/idea/getIdeas', {
+        method: 'GET',
+        headers: myHeaders,
+        mode: 'cors',
+        cache: 'default',
+      });
+
+      fetch(myRequest)
+        .then(response => response.json())
+        .then(mydata => {
+          console.log('mylob....')
+          console.log(mydata);
+          let ids  = [];
+          mydata.map(val => ids.push(val.detail));
+          console.log('------------ after processing.. ' + ids);
+          setIdea(ids);
+        });
+}
+
   // 2. Use at the root of your app
   return (
     <ChakraProvider>
