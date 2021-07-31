@@ -26,7 +26,7 @@ const IdeaForm = (props) => {
           body: JSON.stringify(idea),
           headers: {
             'Content-Type': 'application/json',
-            'Authorization' : 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyOCIsImV4cCI6MTYyNzc3Nzk4OSwiaWF0IjoxNjI3NzQxOTg5fQ.4KA4u8QcAUWNNy8xVDhlpjg8Zm8E26g2ZNW_v_Z6-84'
+            'Authorization' : 'Bearer Token'
           }
         });
         console.log('response...' + response);

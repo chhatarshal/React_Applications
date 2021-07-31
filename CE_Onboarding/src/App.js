@@ -24,7 +24,7 @@ function App({ Component }) {
 
       const myHeaders = new Headers({
         'Content-Type': 'application/json',
-        'Authorization' : 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyOCIsImV4cCI6MTYyNzc3Nzk4OSwiaWF0IjoxNjI3NzQxOTg5fQ.4KA4u8QcAUWNNy8xVDhlpjg8Zm8E26g2ZNW_v_Z6-84'
+        'Authorization' : 'Bearer TOKEN'
       });
 
       const myRequest = new Request('http://localhost:8099/idea/getIdeas', {
@@ -46,7 +46,7 @@ function App({ Component }) {
         });
 }
 
-  // 2. Use at the root of your app
+  // 2. Use at the root of your apps
   return (
     <ChakraProvider>
         <Header />
