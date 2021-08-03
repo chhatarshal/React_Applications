@@ -26,7 +26,7 @@ const IdeaForm = (props) => {
           body: JSON.stringify(idea),
           headers: {
             'Content-Type': 'application/json',
-            'Authorization' : 'Bearer Token'
+            'Authorization' : localStorage.getItem('token')
           }
         });
         console.log('response...' + response);
