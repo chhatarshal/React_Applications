@@ -1,0 +1,659 @@
+{
+    "entityId": 122126,
+    "name": "CIBCVY",
+    "investmentReportingName": "Renaissance U.S. Equity Income Fund",
+    "type": "TRACKER",
+    "period": "QUARTERLY",
+    "complianceFootnote": "Institutional",
+    "channel": "CIBC",
+    "aciDocumentId": "3535Q",
+    "inceptionDate": "09-17-2013",
+    "ancestors": {
+        "policyPortfolio": "Equity Income",
+        "tracker": "Renaissance U.S. Equity Income Fund",
+        "family": "U.S. Value Yield",
+        "strategy": "U.S. Value Yield",
+        "extendedFamily": "Mid-Large Value"
+    },
+    "documentData": {
+        "endingDate": "06-30-2021",
+        "deliveryFolder": "CIBC/Quark_Review",
+        "documentWorkflow": "Commentary Workflow",
+        "prooferDueDate": "07-13-2021 05:00 PM",
+        "finalDueDate": "07-13-2021 10:00 PM",
+        "documentSections": [
+            {
+                "name": "Portfolio Review",
+                "title": "Portfolio Review",
+                "documentStoryTypes": [
+                    {
+                        "name": "Market Environment",
+                        "subjectType": "MARKET",
+                        "subject": "1",
+                        "characterLimit": 420,
+                        "reuseScope": "EXTENDED_FAMILY",
+                        "periodType": "3 MONTH",
+                        "periodBased": true,
+                        "shareAcrossPeriodTypes": false,
+                        "periodEndDate": "06-30-2021",
+                        "supportingLinks": [
+                            {
+                                "uri": "file://///acslan/masterroot/FinWrite/Financial%20Writing%20Data/",
+                                "description": "Financial Writing Folder"
+                            }
+                        ],
+                        "storyWorkFlowName": "Story without Fact Checking Workflow",
+                        "assignedGroup": "Global Growth Authors",
+                        "storyInstructions": "Discuss macro factors and other broad market events to provide context for portfolio performance.This is used primarily in the Portfolio Review section of Institutional commentary. "
+                    },
+                    {
+                        "name": "Market Environment",
+                        "subjectType": "MARKET",
+                        "subject": "2",
+                        "characterLimit": 420,
+                        "reuseScope": "EXTENDED_FAMILY",
+                        "periodType": "3 MONTH",
+                        "periodBased": true,
+                        "shareAcrossPeriodTypes": false,
+                        "periodEndDate": "06-30-2021",
+                        "supportingLinks": [
+                            {
+                                "uri": "file://///acslan/masterroot/FinWrite/Financial%20Writing%20Data/",
+                                "description": "Financial Writing Folder"
+                            }
+                        ],
+                        "storyWorkFlowName": "Story without Fact Checking Workflow",
+                        "assignedGroup": "Global Growth Authors",
+                        "storyInstructions": "Discuss macro factors and other broad market events to provide context for portfolio performance.This is used primarily in the Portfolio Review section of Institutional commentary. "
+                    },
+                    {
+                        "name": "What Worked",
+                        "subjectType": "SECTOR",
+                        "subject": "Information Technology",
+                        "characterLimit": 350,
+                        "reuseScope": "STRATEGY",
+                        "periodType": "3 MONTH",
+                        "periodBased": true,
+                        "shareAcrossPeriodTypes": false,
+                        "periodEndDate": "06-30-2021",
+                        "supportingLinks": [
+                            {
+                                "uri": "https://lkcpgitmsp1:8765/mini-reports/sectorAttributionDetail?period=THREE_MONTH&endingDate=06-30-2021&subject=Information+Technology&entityId=1409",
+                                "description": "Sector Attribution Detail"
+                            },
+                            {
+                                "uri": "https://lkcpgitmsp1:8765/mini-reports/sectorAttributionSummary?period=THREE_MONTH&endingDate=06-30-2021&entityId=1409",
+                                "description": "Sector Contributors and Detractors"
+                            },
+                            {
+                                "uri": "https://lkcpgitmsp1:8765/mini-reports/portfolioSummary?extendedFamilyName=Mid-Large+Value&period=THREE_MONTH&endingDate=06-30-2021",
+                                "description": "Portfolio Summary"
+                            }
+                        ],
+                        "storyWorkFlowName": "Story with Fact Checking Workflow",
+                        "assignedGroup": "Global Growth Authors",
+                        "storyTitle": "Information Technology",
+                        "storyInstructions": "Discuss sector level contribution or detraction from performance. If referencing individual securities, ensure they held across all trackers of this policy portfolio.",
+                        "holdingStatus": "OW",
+                        "totalReturn": "5.92",
+                        "totalEffect": "0.39"
+                    },
+                    {
+                        "name": "Positioning Highlights",
+                        "subjectType": "STRATEGY",
+                        "subject": "1",
+                        "characterLimit": 350,
+                        "reuseScope": "FAMILY",
+                        "periodType": "3 MONTH",
+                        "periodBased": true,
+                        "shareAcrossPeriodTypes": true,
+                        "periodEndDate": "06-30-2021",
+                        "supportingLinks": [
+                            {
+                                "uri": "https://lkcpgitmsp1:8765/mini-reports/sectorWeightChanges?period=THREE_MONTH&endingDate=06-30-2021&entityId=1409",
+                                "description": "Sector Weight Changes"
+                            },
+                            {
+                                "uri": "https://lkcpgitmsp1:8765/mini-reports/regionWeightChanges?period=THREE_MONTH&endingDate=06-30-2021&entityId=1409",
+                                "description": "Region Weight Changes"
+                            },
+                            {
+                                "uri": "https://lkcpgitmsp1:8765/mini-reports/sectorAttributionSummary?period=THREE_MONTH&endingDate=06-30-2021&entityId=1409",
+                                "description": "Sector Contributors and Detractors"
+                            },
+                            {
+                                "uri": "https://lkcpgitmsp1:8765/mini-reports/notableTrades?period=THREE_MONTH&endingDate=06-30-2021&entityId=1409",
+                                "description": "Notable Trades"
+                            }
+                        ],
+                        "storyWorkFlowName": "Story with Fact Checking Workflow",
+                        "assignedGroup": "Global Growth Authors",
+                        "storyInstructions": "For Portfolio Review section.  Forward-looking comments on sector or regional positioning or outlook."
+                    }
+                ]
+            },
+            {
+                "name": "Notable Buys",
+                "title": "Notable Buys",
+                "documentStoryTypes": [
+                    {
+                        "name": "Notable Buy",
+                        "subjectType": "COMPANY",
+                        "subject": "Cardinal Health Inc",
+                        "characterLimit": 330,
+                        "reuseScope": "EXTENDED_FAMILY",
+                        "periodType": "3 MONTH",
+                        "periodBased": true,
+                        "shareAcrossPeriodTypes": true,
+                        "periodEndDate": "06-30-2021",
+                        "supportingLinks": [
+                            {
+                                "uri": "https://lkcpgitmsp1:8765/mini-reports/notableTrades?period=THREE_MONTH&endingDate=06-30-2021&entityId=1409",
+                                "description": "Notable Trades"
+                            }
+                        ],
+                        "storyWorkFlowName": "Story without Fact Checking Workflow",
+                        "assignedGroup": "Global Growth Authors",
+                        "storyTitle": "Cardinal Health Inc",
+                        "storyInstructions": "Discuss a situation where we added to a position. "
+                    },
+                    {
+                        "name": "Notable Buy",
+                        "subjectType": "COMPANY",
+                        "subject": "Welltower Inc",
+                        "characterLimit": 330,
+                        "reuseScope": "EXTENDED_FAMILY",
+                        "periodType": "3 MONTH",
+                        "periodBased": true,
+                        "shareAcrossPeriodTypes": true,
+                        "periodEndDate": "06-30-2021",
+                        "supportingLinks": [
+                            {
+                                "uri": "https://lkcpgitmsp1:8765/mini-reports/notableTrades?period=THREE_MONTH&endingDate=06-30-2021&entityId=1409",
+                                "description": "Notable Trades"
+                            }
+                        ],
+                        "storyWorkFlowName": "Story without Fact Checking Workflow",
+                        "assignedGroup": "Global Growth Authors",
+                        "storyTitle": "Welltower Inc",
+                        "storyInstructions": "Discuss a situation where we added to a position. "
+                    },
+                    {
+                        "name": "Notable Buy",
+                        "subjectType": "COMPANY",
+                        "subject": "UnitedHealth Group Inc",
+                        "characterLimit": 330,
+                        "reuseScope": "EXTENDED_FAMILY",
+                        "periodType": "3 MONTH",
+                        "periodBased": true,
+                        "shareAcrossPeriodTypes": true,
+                        "periodEndDate": "06-30-2021",
+                        "supportingLinks": [
+                            {
+                                "uri": "https://lkcpgitmsp1:8765/mini-reports/notableTrades?period=THREE_MONTH&endingDate=06-30-2021&entityId=1409",
+                                "description": "Notable Trades"
+                            }
+                        ],
+                        "storyWorkFlowName": "Story without Fact Checking Workflow",
+                        "assignedGroup": "Global Growth Authors",
+                        "storyTitle": "UnitedHealth Group Inc",
+                        "storyInstructions": "Discuss a situation where we added to a position. "
+                    },
+                    {
+                        "name": "Notable Buy",
+                        "subjectType": "COMPANY",
+                        "subject": "Amcor PLC",
+                        "characterLimit": 330,
+                        "reuseScope": "EXTENDED_FAMILY",
+                        "periodType": "3 MONTH",
+                        "periodBased": true,
+                        "shareAcrossPeriodTypes": true,
+                        "periodEndDate": "06-30-2021",
+                        "supportingLinks": [
+                            {
+                                "uri": "https://lkcpgitmsp1:8765/mini-reports/notableTrades?period=THREE_MONTH&endingDate=06-30-2021&entityId=1409",
+                                "description": "Notable Trades"
+                            }
+                        ],
+                        "storyWorkFlowName": "Story without Fact Checking Workflow",
+                        "assignedGroup": "Global Growth Authors",
+                        "storyTitle": "Amcor PLC",
+                        "storyInstructions": "Discuss a situation where we added to a position. "
+                    },
+                    {
+                        "name": "Notable Buy",
+                        "subjectType": "COMPANY",
+                        "subject": "Baker Hughes Co",
+                        "characterLimit": 330,
+                        "reuseScope": "EXTENDED_FAMILY",
+                        "periodType": "3 MONTH",
+                        "periodBased": true,
+                        "shareAcrossPeriodTypes": true,
+                        "periodEndDate": "06-30-2021",
+                        "supportingLinks": [
+                            {
+                                "uri": "https://lkcpgitmsp1:8765/mini-reports/notableTrades?period=THREE_MONTH&endingDate=06-30-2021&entityId=1409",
+                                "description": "Notable Trades"
+                            }
+                        ],
+                        "storyWorkFlowName": "Story without Fact Checking Workflow",
+                        "assignedGroup": "Global Growth Authors",
+                        "storyTitle": "Baker Hughes Co",
+                        "storyInstructions": "Discuss a situation where we added to a position. "
+                    }
+                ]
+            },
+            {
+                "name": "Notable Sells",
+                "title": "Notable Sells",
+                "documentStoryTypes": [
+                    {
+                        "name": "Notable Sell",
+                        "subjectType": "COMPANY",
+                        "subject": "SCHW CSFB (conv)",
+                        "characterLimit": 330,
+                        "reuseScope": "EXTENDED_FAMILY",
+                        "periodType": "3 MONTH",
+                        "periodBased": true,
+                        "shareAcrossPeriodTypes": true,
+                        "periodEndDate": "06-30-2021",
+                        "supportingLinks": [
+                            {
+                                "uri": "https://lkcpgitmsp1:8765/mini-reports/notableTrades?period=THREE_MONTH&endingDate=06-30-2021&entityId=1409",
+                                "description": "Notable Trades"
+                            }
+                        ],
+                        "storyWorkFlowName": "Story without Fact Checking Workflow",
+                        "assignedGroup": "Global Growth Authors",
+                        "storyTitle": "SCHW CSFB (conv)",
+                        "storyInstructions": "Use this story type to discuss trims only."
+                    },
+                    {
+                        "name": "Notable Sell",
+                        "subjectType": "COMPANY",
+                        "subject": "BRKB UBS (conv)",
+                        "characterLimit": 330,
+                        "reuseScope": "EXTENDED_FAMILY",
+                        "periodType": "3 MONTH",
+                        "periodBased": true,
+                        "shareAcrossPeriodTypes": true,
+                        "periodEndDate": "06-30-2021",
+                        "supportingLinks": [
+                            {
+                                "uri": "https://lkcpgitmsp1:8765/mini-reports/notableTrades?period=THREE_MONTH&endingDate=06-30-2021&entityId=1409",
+                                "description": "Notable Trades"
+                            }
+                        ],
+                        "storyWorkFlowName": "Story without Fact Checking Workflow",
+                        "assignedGroup": "Global Growth Authors",
+                        "storyTitle": "BRKB UBS (conv)",
+                        "storyInstructions": "Use this story type to discuss trims only."
+                    },
+                    {
+                        "name": "Notable Sell",
+                        "subjectType": "COMPANY",
+                        "subject": "NSC RBCM (conv)",
+                        "characterLimit": 330,
+                        "reuseScope": "EXTENDED_FAMILY",
+                        "periodType": "3 MONTH",
+                        "periodBased": true,
+                        "shareAcrossPeriodTypes": true,
+                        "periodEndDate": "06-30-2021",
+                        "supportingLinks": [
+                            {
+                                "uri": "https://lkcpgitmsp1:8765/mini-reports/notableTrades?period=THREE_MONTH&endingDate=06-30-2021&entityId=1409",
+                                "description": "Notable Trades"
+                            }
+                        ],
+                        "storyWorkFlowName": "Story without Fact Checking Workflow",
+                        "assignedGroup": "Global Growth Authors",
+                        "storyTitle": "NSC RBCM (conv)",
+                        "storyInstructions": "Use this story type to discuss trims only."
+                    },
+                    {
+                        "name": "Notable Sell",
+                        "subjectType": "COMPANY",
+                        "subject": "SCHW CSFB 1",
+                        "characterLimit": 330,
+                        "reuseScope": "EXTENDED_FAMILY",
+                        "periodType": "3 MONTH",
+                        "periodBased": true,
+                        "shareAcrossPeriodTypes": true,
+                        "periodEndDate": "06-30-2021",
+                        "supportingLinks": [
+                            {
+                                "uri": "https://lkcpgitmsp1:8765/mini-reports/notableTrades?period=THREE_MONTH&endingDate=06-30-2021&entityId=1409",
+                                "description": "Notable Trades"
+                            }
+                        ],
+                        "storyWorkFlowName": "Story without Fact Checking Workflow",
+                        "assignedGroup": "Global Growth Authors",
+                        "storyTitle": "SCHW CSFB (conv)",
+                        "storyInstructions": "Use this story type to discuss trims only."
+                    },
+                    {
+                        "name": "Notable Sell",
+                        "subjectType": "COMPANY",
+                        "subject": "BRKB RBCM (conv)",
+                        "characterLimit": 330,
+                        "reuseScope": "EXTENDED_FAMILY",
+                        "periodType": "3 MONTH",
+                        "periodBased": true,
+                        "shareAcrossPeriodTypes": true,
+                        "periodEndDate": "06-30-2021",
+                        "supportingLinks": [
+                            {
+                                "uri": "https://lkcpgitmsp1:8765/mini-reports/notableTrades?period=THREE_MONTH&endingDate=06-30-2021&entityId=1409",
+                                "description": "Notable Trades"
+                            }
+                        ],
+                        "storyWorkFlowName": "Story without Fact Checking Workflow",
+                        "assignedGroup": "Global Growth Authors",
+                        "storyTitle": "BRKB RBCM (conv)",
+                        "storyInstructions": "Use this story type to discuss trims only."
+                    }
+                ]
+            },
+            {
+                "name": "Key Contributors",
+                "title": "Key Contributors",
+                "documentStoryTypes": [
+                    {
+                        "name": "Stock Contributor",
+                        "subjectType": "COMPANY",
+                        "subject": "Roche Holding AG",
+                        "characterLimit": 330,
+                        "reuseScope": "EXTENDED_FAMILY",
+                        "periodType": "3 MONTH",
+                        "periodBased": true,
+                        "shareAcrossPeriodTypes": false,
+                        "periodEndDate": "06-30-2021",
+                        "supportingLinks": [
+                            {
+                                "uri": "https://lkcpgitmsp1:8765/mini-reports/sectorAttributionSummary?period=THREE_MONTH&endingDate=06-30-2021&entityId=1409",
+                                "description": "Sector Contributors and Detractors"
+                            },
+                            {
+                                "uri": "https://lkcpgitmsp1:8765/mini-reports/stockAttributionSummary?extendedFamilyName=Mid-Large+Value&period=THREE_MONTH&endingDate=06-30-2021",
+                                "description": "Stock Attribution Summary"
+                            }
+                        ],
+                        "storyWorkFlowName": "Story without Fact Checking Workflow",
+                        "assignedGroup": "Global Growth Authors",
+                        "storyTitle": "Roche Holding AG",
+                        "storyInstructions": "Discussion of the stock's performance during the period.  Avoid any specifics that would prevent this story from being shared across all portfolios in the extended family.",
+                        "holdingStatus": "PO",
+                        "totalReturn": "16.66",
+                        "totalEffect": "0.31"
+                    },
+                    {
+                        "name": "Stock Contributor",
+                        "subjectType": "COMPANY",
+                        "subject": "Marsh & McLennan Cos Inc",
+                        "characterLimit": 330,
+                        "reuseScope": "EXTENDED_FAMILY",
+                        "periodType": "3 MONTH",
+                        "periodBased": true,
+                        "shareAcrossPeriodTypes": false,
+                        "periodEndDate": "06-30-2021",
+                        "supportingLinks": [
+                            {
+                                "uri": "https://lkcpgitmsp1:8765/mini-reports/sectorAttributionSummary?period=THREE_MONTH&endingDate=06-30-2021&entityId=1409",
+                                "description": "Sector Contributors and Detractors"
+                            },
+                            {
+                                "uri": "https://lkcpgitmsp1:8765/mini-reports/stockAttributionSummary?extendedFamilyName=Mid-Large+Value&period=THREE_MONTH&endingDate=06-30-2021",
+                                "description": "Stock Attribution Summary"
+                            }
+                        ],
+                        "storyWorkFlowName": "Story without Fact Checking Workflow",
+                        "assignedGroup": "Global Growth Authors",
+                        "storyTitle": "Marsh & McLennan Cos Inc",
+                        "storyInstructions": "Discussion of the stock's performance during the period.  Avoid any specifics that would prevent this story from being shared across all portfolios in the extended family.",
+                        "holdingStatus": "OW",
+                        "totalReturn": "16.04",
+                        "totalEffect": "0.24"
+                    },
+                    {
+                        "name": "Stock Contributor",
+                        "subjectType": "COMPANY",
+                        "subject": "Intel Corp",
+                        "characterLimit": 330,
+                        "reuseScope": "EXTENDED_FAMILY",
+                        "periodType": "3 MONTH",
+                        "periodBased": true,
+                        "shareAcrossPeriodTypes": false,
+                        "periodEndDate": "06-30-2021",
+                        "supportingLinks": [
+                            {
+                                "uri": "https://lkcpgitmsp1:8765/mini-reports/sectorAttributionSummary?period=THREE_MONTH&endingDate=06-30-2021&entityId=1409",
+                                "description": "Sector Contributors and Detractors"
+                            },
+                            {
+                                "uri": "https://lkcpgitmsp1:8765/mini-reports/stockAttributionSummary?extendedFamilyName=Mid-Large+Value&period=THREE_MONTH&endingDate=06-30-2021",
+                                "description": "Stock Attribution Summary"
+                            }
+                        ],
+                        "storyWorkFlowName": "Story without Fact Checking Workflow",
+                        "assignedGroup": "Global Growth Authors",
+                        "storyTitle": "Intel Corp",
+                        "storyInstructions": "Discussion of the stock's performance during the period.  Avoid any specifics that would prevent this story from being shared across all portfolios in the extended family.",
+                        "holdingStatus": "IO",
+                        "totalReturn": "Not held",
+                        "totalEffect": "0.2"
+                    },
+                    {
+                        "name": "Stock Contributor",
+                        "subjectType": "COMPANY",
+                        "subject": "Microsoft Corp",
+                        "characterLimit": 330,
+                        "reuseScope": "EXTENDED_FAMILY",
+                        "periodType": "3 MONTH",
+                        "periodBased": true,
+                        "shareAcrossPeriodTypes": false,
+                        "periodEndDate": "06-30-2021",
+                        "supportingLinks": [
+                            {
+                                "uri": "https://lkcpgitmsp1:8765/mini-reports/sectorAttributionSummary?period=THREE_MONTH&endingDate=06-30-2021&entityId=1409",
+                                "description": "Sector Contributors and Detractors"
+                            },
+                            {
+                                "uri": "https://lkcpgitmsp1:8765/mini-reports/stockAttributionSummary?extendedFamilyName=Mid-Large+Value&period=THREE_MONTH&endingDate=06-30-2021",
+                                "description": "Stock Attribution Summary"
+                            }
+                        ],
+                        "storyWorkFlowName": "Story without Fact Checking Workflow",
+                        "assignedGroup": "Global Growth Authors",
+                        "storyTitle": "Microsoft Corp",
+                        "storyInstructions": "Discussion of the stock's performance during the period.  Avoid any specifics that would prevent this story from being shared across all portfolios in the extended family.",
+                        "holdingStatus": "PO",
+                        "totalReturn": "15.34",
+                        "totalEffect": "0.2"
+                    },
+                    {
+                        "name": "Stock Contributor",
+                        "subjectType": "COMPANY",
+                        "subject": "Walt Disney Co-The",
+                        "characterLimit": 330,
+                        "reuseScope": "EXTENDED_FAMILY",
+                        "periodType": "3 MONTH",
+                        "periodBased": true,
+                        "shareAcrossPeriodTypes": false,
+                        "periodEndDate": "06-30-2021",
+                        "supportingLinks": [
+                            {
+                                "uri": "https://lkcpgitmsp1:8765/mini-reports/sectorAttributionSummary?period=THREE_MONTH&endingDate=06-30-2021&entityId=1409",
+                                "description": "Sector Contributors and Detractors"
+                            },
+                            {
+                                "uri": "https://lkcpgitmsp1:8765/mini-reports/stockAttributionSummary?extendedFamilyName=Mid-Large+Value&period=THREE_MONTH&endingDate=06-30-2021",
+                                "description": "Stock Attribution Summary"
+                            }
+                        ],
+                        "storyWorkFlowName": "Story without Fact Checking Workflow",
+                        "assignedGroup": "Global Growth Authors",
+                        "storyTitle": "Walt Disney Co/The",
+                        "storyInstructions": "Discussion of the stock's performance during the period.  Avoid any specifics that would prevent this story from being shared across all portfolios in the extended family.",
+                        "holdingStatus": "IO",
+                        "totalReturn": "Not held",
+                        "totalEffect": "0.17"
+                    }
+                ]
+            },
+            {
+                "name": "Key Detractors",
+                "title": "Key Detractors",
+                "documentStoryTypes": [
+                    {
+                        "name": "Stock Detractor",
+                        "subjectType": "COMPANY",
+                        "subject": "Alphabet Inc",
+                        "characterLimit": 330,
+                        "reuseScope": "EXTENDED_FAMILY",
+                        "periodType": "3 MONTH",
+                        "periodBased": true,
+                        "shareAcrossPeriodTypes": false,
+                        "periodEndDate": "06-30-2021",
+                        "supportingLinks": [
+                            {
+                                "uri": "https://lkcpgitmsp1:8765/mini-reports/sectorAttributionSummary?period=THREE_MONTH&endingDate=06-30-2021&entityId=1409",
+                                "description": "Sector Contributors and Detractors"
+                            },
+                            {
+                                "uri": "https://lkcpgitmsp1:8765/mini-reports/stockAttributionSummary?extendedFamilyName=Mid-Large+Value&period=THREE_MONTH&endingDate=06-30-2021",
+                                "description": "Stock Attribution Summary"
+                            }
+                        ],
+                        "storyWorkFlowName": "Story without Fact Checking Workflow",
+                        "assignedGroup": "Global Growth Authors",
+                        "storyTitle": "Alphabet Inc",
+                        "storyInstructions": "Discussion of the stock's performance during the period.  Avoid any specifics that would prevent this story from being shared across all portfolios in the extended family.",
+                        "holdingStatus": "IO",
+                        "totalReturn": "Not held",
+                        "totalEffect": "-0.2"
+                    },
+                    {
+                        "name": "Stock Detractor",
+                        "subjectType": "COMPANY",
+                        "subject": "Johnson & Johnson",
+                        "characterLimit": 330,
+                        "reuseScope": "EXTENDED_FAMILY",
+                        "periodType": "3 MONTH",
+                        "periodBased": true,
+                        "shareAcrossPeriodTypes": false,
+                        "periodEndDate": "06-30-2021",
+                        "supportingLinks": [
+                            {
+                                "uri": "https://lkcpgitmsp1:8765/mini-reports/sectorAttributionSummary?period=THREE_MONTH&endingDate=06-30-2021&entityId=1409",
+                                "description": "Sector Contributors and Detractors"
+                            },
+                            {
+                                "uri": "https://lkcpgitmsp1:8765/mini-reports/stockAttributionSummary?extendedFamilyName=Mid-Large+Value&period=THREE_MONTH&endingDate=06-30-2021",
+                                "description": "Stock Attribution Summary"
+                            }
+                        ],
+                        "storyWorkFlowName": "Story without Fact Checking Workflow",
+                        "assignedGroup": "Global Growth Authors",
+                        "storyTitle": "Johnson & Johnson",
+                        "storyInstructions": "Discussion of the stock's performance during the period.  Avoid any specifics that would prevent this story from being shared across all portfolios in the extended family.",
+                        "holdingStatus": "OW",
+                        "totalReturn": "0.35",
+                        "totalEffect": "-0.14"
+                    },
+                    {
+                        "name": "Stock Detractor",
+                        "subjectType": "COMPANY",
+                        "subject": "Verizon Communications Inc",
+                        "characterLimit": 330,
+                        "reuseScope": "EXTENDED_FAMILY",
+                        "periodType": "3 MONTH",
+                        "periodBased": true,
+                        "shareAcrossPeriodTypes": false,
+                        "periodEndDate": "06-30-2021",
+                        "supportingLinks": [
+                            {
+                                "uri": "https://lkcpgitmsp1:8765/mini-reports/sectorAttributionSummary?period=THREE_MONTH&endingDate=06-30-2021&entityId=1409",
+                                "description": "Sector Contributors and Detractors"
+                            },
+                            {
+                                "uri": "https://lkcpgitmsp1:8765/mini-reports/stockAttributionSummary?extendedFamilyName=Mid-Large+Value&period=THREE_MONTH&endingDate=06-30-2021",
+                                "description": "Stock Attribution Summary"
+                            }
+                        ],
+                        "storyWorkFlowName": "Story without Fact Checking Workflow",
+                        "assignedGroup": "Global Growth Authors",
+                        "storyTitle": "Verizon Communications Inc",
+                        "storyInstructions": "Discussion of the stock's performance during the period.  Avoid any specifics that would prevent this story from being shared across all portfolios in the extended family.",
+                        "holdingStatus": "OW",
+                        "totalReturn": "-3.08",
+                        "totalEffect": "-0.14"
+                    },
+                    {
+                        "name": "Stock Detractor",
+                        "subjectType": "COMPANY",
+                        "subject": "ONE Gas Inc",
+                        "characterLimit": 330,
+                        "reuseScope": "EXTENDED_FAMILY",
+                        "periodType": "3 MONTH",
+                        "periodBased": true,
+                        "shareAcrossPeriodTypes": false,
+                        "periodEndDate": "06-30-2021",
+                        "supportingLinks": [
+                            {
+                                "uri": "https://lkcpgitmsp1:8765/mini-reports/sectorAttributionSummary?period=THREE_MONTH&endingDate=06-30-2021&entityId=1409",
+                                "description": "Sector Contributors and Detractors"
+                            },
+                            {
+                                "uri": "https://lkcpgitmsp1:8765/mini-reports/stockAttributionSummary?extendedFamilyName=Mid-Large+Value&period=THREE_MONTH&endingDate=06-30-2021",
+                                "description": "Stock Attribution Summary"
+                            }
+                        ],
+                        "storyWorkFlowName": "Story without Fact Checking Workflow",
+                        "assignedGroup": "Global Growth Authors",
+                        "storyTitle": "ONE Gas Inc",
+                        "storyInstructions": "Discussion of the stock's performance during the period.  Avoid any specifics that would prevent this story from being shared across all portfolios in the extended family.",
+                        "holdingStatus": "OW",
+                        "totalReturn": "-1.87",
+                        "totalEffect": "-0.13"
+                    },
+                    {
+                        "name": "Stock Detractor",
+                        "subjectType": "COMPANY",
+                        "subject": "Spire Inc",
+                        "characterLimit": 330,
+                        "reuseScope": "EXTENDED_FAMILY",
+                        "periodType": "3 MONTH",
+                        "periodBased": true,
+                        "shareAcrossPeriodTypes": false,
+                        "periodEndDate": "06-30-2021",
+                        "supportingLinks": [
+                            {
+                                "uri": "https://lkcpgitmsp1:8765/mini-reports/sectorAttributionSummary?period=THREE_MONTH&endingDate=06-30-2021&entityId=1409",
+                                "description": "Sector Contributors and Detractors"
+                            },
+                            {
+                                "uri": "https://lkcpgitmsp1:8765/mini-reports/stockAttributionSummary?extendedFamilyName=Mid-Large+Value&period=THREE_MONTH&endingDate=06-30-2021",
+                                "description": "Stock Attribution Summary"
+                            }
+                        ],
+                        "storyWorkFlowName": "Story without Fact Checking Workflow",
+                        "assignedGroup": "Global Growth Authors",
+                        "storyTitle": "Spire Inc",
+                        "storyInstructions": "Discussion of the stock's performance during the period.  Avoid any specifics that would prevent this story from being shared across all portfolios in the extended family.",
+                        "holdingStatus": "OW",
+                        "totalReturn": "-1.39",
+                        "totalEffect": "-0.12"
+                    }
+                ]
+            }
+        ]
+    },
+    "_links": {
+        "self": {
+            "href": "https://acwsg.americancentury.com/commentary/documents/1529"
+        },
+        "policyPortfolio": {
+            "href": "https://acwsg.americancentury.com/commentary/documents/370"
+        }
+    }
+}
