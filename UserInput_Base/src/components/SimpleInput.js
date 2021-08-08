@@ -22,6 +22,15 @@ const SimpleInput = (props) => {
       event.preventDefault();
       console.log(event.target.value);
       setInputval(event.target.value);
+      if (refExample.current.value.length < 1) {
+        console.log('value of input is empty..');
+        setInputisValid(false);
+        setTouched(true);
+        return ;
+      } else {
+        setInputisValid(true);
+        setTouched(true);
+      }
   }
 
   const handleSubmit = (event) => {
