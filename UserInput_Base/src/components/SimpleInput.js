@@ -27,17 +27,19 @@ const SimpleInput = (props) => {
       //setInputval('');
   }
   
+  const myforclass = inputisValid ? 'form-control' : 'form-control invalid';
 
   return (
     <form onSubmit={handleSubmit}>
-     <div className='form-control'>
+     <div className={myforclass}>
         <label htmlFor='name'>Your Name</label>
         <input ref={refExample} type='text' id='name' value={inputval} onChange={nameInputChangeHandler} />
+        {!inputisValid && <p>enter name is not valid</p>}
       </div>
       <div className="form-actions">
         <button>Submit</button>
       </div>
-      {!inputisValid && <p>enter name is not valid</p>}
+      
     </form>
   );
 };
