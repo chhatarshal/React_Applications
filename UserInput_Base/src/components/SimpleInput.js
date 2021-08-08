@@ -2,11 +2,10 @@ import React, {useState} from 'react';
 
 const SimpleInput = (props) => {
 
-  const [inputval, setInputval]= useState('');
-  const [inputisValid, setInputisValid] = useState(false);
+  const [inputval, setInputval]= useState('');  
   const [touched, setTouched] = useState(false); 
    
-  const inputisInvalid = touched && !inputisValid;
+  const inputisInvalid = touched && inputval.trim().length === 0;
 
   const nameInputChangeHandler = (event) => {
       event.preventDefault();
@@ -14,11 +13,11 @@ const SimpleInput = (props) => {
       setInputval(event.target.value);
       if (event.target.value.length < 1) {
         console.log('value of input is empty..');
-        setInputisValid(false);
+        
         setTouched(true);
         return ;
       } else {
-        setInputisValid(true);
+      
         setTouched(true);
       }
   }
@@ -27,7 +26,7 @@ const SimpleInput = (props) => {
       event.preventDefault();
       if (inputval.length < 1) {
         console.log('value of input is empty..');
-        setInputisValid(false);
+       
         setTouched(true);
         return ;
       }
@@ -41,11 +40,11 @@ const SimpleInput = (props) => {
     console.log('blur....');
     if (inputval.length < 1) {
       console.log('value of input is empty..');
-      setInputisValid(false);
+     
       setTouched(true);
       return ;
     } else {
-      setInputisValid(true);
+    
       setTouched(true);
     }
   }
