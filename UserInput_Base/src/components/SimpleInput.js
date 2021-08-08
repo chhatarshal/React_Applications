@@ -37,6 +37,19 @@ const SimpleInput = (props) => {
       console.log(refExample.current.value);
       //setInputval('');
   }
+
+  const blurHandler = (event) => {
+    console.log('blur....');
+    if (refExample.current.value.length < 1) {
+      console.log('value of input is empty..');
+      setInputisValid(false);
+      setTouched(true);
+      return ;
+    } else {
+      setInputisValid(true);
+      setTouched(true);
+    }
+  }
   
   const myforclass = !inputisInvalid ? 'form-control' : 'form-control invalid';
 
@@ -44,7 +57,7 @@ const SimpleInput = (props) => {
     <form onSubmit={handleSubmit}>
      <div className={myforclass}>
         <label htmlFor='name'>Your Name</label>
-        <input ref={refExample} type='text' id='name' value={inputval} onChange={nameInputChangeHandler} />
+        <input ref={refExample} type='text' id='name' value={inputval} onChange={nameInputChangeHandler} onBlur = {blurHandler}/>
         {inputisInvalid && <p>enter name is not valid</p>}
       </div>
       <div className="form-actions">
