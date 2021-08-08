@@ -1,12 +1,22 @@
-import React, {useState, useRef } from 'react';
+import React, {useState, useRef, useEffect } from 'react';
 
 const SimpleInput = (props) => {
 
   const [inputval, setInputval]= useState('');
-  const [inputisValid, setInputisValid] = useState(true);
+  const [inputisValid, setInputisValid] = useState(false);
+  const [touched, setTouched] = useState(false);
 
   const refExample = useRef('');
+  useEffect(() => {
+    console.log('use effect...')
+    return () => {
+      console.log('destroy')
+    }
+  },
+    [inputisValid]
+  ); 
 
+  const inputisInvalid = touched && !inputisValid;
 
   const nameInputChangeHandler = (event) => {
       event.preventDefault();
@@ -19,6 +29,7 @@ const SimpleInput = (props) => {
       if (refExample.current.value.length < 1) {
         console.log('value of input is empty..');
         setInputisValid(false);
+        setTouched(true);
         return ;
       }
       console.log('---------');
@@ -27,14 +38,14 @@ const SimpleInput = (props) => {
       //setInputval('');
   }
   
-  const myforclass = inputisValid ? 'form-control' : 'form-control invalid';
+  const myforclass = !inputisInvalid ? 'form-control' : 'form-control invalid';
 
   return (
     <form onSubmit={handleSubmit}>
      <div className={myforclass}>
         <label htmlFor='name'>Your Name</label>
         <input ref={refExample} type='text' id='name' value={inputval} onChange={nameInputChangeHandler} />
-        {!inputisValid && <p>enter name is not valid</p>}
+        {inputisInvalid && <p>enter name is not valid</p>}
       </div>
       <div className="form-actions">
         <button>Submit</button>
