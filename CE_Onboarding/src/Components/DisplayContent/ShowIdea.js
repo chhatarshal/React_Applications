@@ -1,5 +1,5 @@
  
-import {Fragment} from 'react';
+import {Fragment, useEffect} from 'react';
 import { VStack, StackDivider, Box } from "@chakra-ui/react"
 
 const ShowIdea = (props) => {
@@ -9,6 +9,10 @@ const ShowIdea = (props) => {
     if (props.idea.length > 0) {
         ideasList = props.idea.map(value => <Box h="40px" key={value} bg="yellow.200">{value}</Box>   )
     }  
+
+    useEffect(() => {
+            console.log('useeffect of show idea')
+    }, []);
 
     return <Fragment>
              <VStack  

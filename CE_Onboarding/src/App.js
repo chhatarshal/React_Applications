@@ -1,73 +1,31 @@
-import * as React from "react";
-import {useState, Fragment, useEffect} from "react";
-import IdeaForm from "./Components/IdeaInfo/IdeaForm";
-import Header from "./Components/Layout/Header";
+import React, { useState } from 'react';
 
-// 1. import `ChakraProvider` component
-import { ChakraProvider } from "@chakra-ui/react"
-import ShowIdea from './Components/DisplayContent/ShowIdea';
-import LoginForm from './Components/Login/LoginForm';
+import Login from './Components/Login/Login';
+import Home from './Components/Home/Home';
+import MainHeader from './Components/MainHeader/MainHeader';
 
-function App({ Component }) {
-  let [idea, setIdea] = useState([]);
-  let [loggedIn, setLoggedIn] = useState(false);
+function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-  useEffect(() => {
-    const token = localStorage.getItem('token');
-    if (token && token.length > 0) {
-      setLoggedIn(true);
-    }
-  }, []);
-  const logged = (val) => {
-    
-    console.log('geting.......');
-    console.log(localStorage.getItem('token'));
-  }
+  const loginHandler = (email, password) => {
+    // We should of course check email and password
+    // But it's just a dummy/ demo anyways
+    setIsLoggedIn(true);
+  };
 
-  const sendIdeaHere = (valueOfIdea) => {
-    
-    const myHeaders = new Headers({
-      'Content-Type': 'application/json',
-      'Authorization' : localStorage.getItem('token')
-    });
+  const logoutHandler = () => {
+    setIsLoggedIn(false);
+  };
 
-    const myRequest = new Request('http://localhost:8099/idea/getIdeas', {
-      method: 'GET',
-      headers: myHeaders,
-      mode: 'cors',
-      cache: 'default',
-    });
-
-    fetch(myRequest)
-      .then(response => response.json())
-      .then(mydata => {
-        console.log('mylob....')
-        console.log(mydata);
-        let ids  = [];
-        mydata.map(val => ids.push(val.detail));
-        console.log('------------ after processing.. ' + ids);
-        setIdea(ids);
-      });
-         
-  }
-
-  // 2. Use at the root of your apps
   return (
-    <ChakraProvider>
-        <Header />
-        <main>
-        {!loggedIn &&
-        <LoginForm logged = {logged}/>
-        }
-        {loggedIn && 
-        <Fragment>
-          <IdeaForm sendIdea={sendIdeaHere} ></IdeaForm>
-          <ShowIdea idea={idea}/>
-        </Fragment>        
-        }
-        </main>
-    </ChakraProvider>
-  )
+    <React.Fragment>
+      <MainHeader isAuthenticated={isLoggedIn} onLogout={logoutHandler} />
+      <main>
+        {!isLoggedIn && <Login onLogin={loginHandler} />}
+        {isLoggedIn && <Home onLogout={logoutHandler} />}
+      </main>
+    </React.Fragment>
+  );
 }
 
 export default App;

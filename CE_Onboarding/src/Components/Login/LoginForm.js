@@ -65,10 +65,13 @@ const LoginForm = (props) => {
     const onChageInputHandlerUserName = (event) => {
         setUserName(event.target.value);
     }
-
     
     const onChageInputHandlerPassword = (event) => {
         setPassword(event.target.value);
+    }
+
+    const logout = (event) => {
+        localStorage.removeItem('token');
     }
 
     const [username, setUserName] = useState(null);
@@ -88,6 +91,7 @@ const LoginForm = (props) => {
                                 <Box w="100%" h="20" > <Input placeholder="Password" value={password}  onChange={onChageInputHandlerPassword} size="sm"/> </Box>
                             </Grid>
                             <Box w="100%" h="10" >  <Button colorScheme="blue" size="sm" type="submit"  >Login</Button>  </Box>
+                            <Box w="100%" h="10" >  <Button colorScheme="blue" size="sm" type="submit" onClick={logout} >Logout</Button>  </Box>
                         </form>
                     </Center>         
                 </Container>
