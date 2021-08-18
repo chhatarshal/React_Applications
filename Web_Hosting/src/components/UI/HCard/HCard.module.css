@@ -1,0 +1,22 @@
+
+
+.main {
+    background-color: GREEN;
+    padding: 10px;
+    display: inline-block;
+    width: 20%;
+    height: 200px;
+    border: 1px solid gray;
+    overflow: hidden;
+}
+
+.main_dark {
+    background-color: rgb(6, 6, 8);
+    color: white;
+    padding: 10px;
+    display: inline-block;
+    width: 20%;
+    border: 1px solid gray;
+    height: 200px;
+    overflow: hidden;
+}
