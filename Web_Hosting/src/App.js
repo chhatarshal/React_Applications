@@ -5,6 +5,7 @@ import Button from './components/UI/Button/Button';
 
 import React, {useState, useEffect} from 'react';
 import useButton from './CustomHook/useButton';
+import Login from './components/Login/Login';
 
 function App() {
 
@@ -29,19 +30,17 @@ function App() {
   return (
     <>
     <Header />
-    <CardConfigure theam="green" count={5}>
-        <Button card="4" onClick={onClick} >{clicked}</Button>
-        <Button onClick={onClick} >{clicked}</Button>
-      </CardConfigure>
+    <CardConfigure theam="green" size = {'X'} count={1}>
+       <Login />
+    </CardConfigure>
     <CardConfigure theam="green" count={2}> 
     <Button onClick={onClick} >{clicked}</Button>
       <h1> Product Title</h1> 
       <h2> Product Sub Title</h2>      
       <p> This is my product description please buy it! </p> 
       <div>Origin of product: </div>
-    </CardConfigure>
-    <CardConfigure theam="black" count={2}/>
-    <CardConfigure theam="green" count={3}/>    
+    </CardConfigure>     
+      
     <Footer />
     </>
   );
