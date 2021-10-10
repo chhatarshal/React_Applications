@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import Card from '../UI/Card';
+import Card from '../UI/Card/Card';
 import classes from './Login.module.css';
 import Button from '../UI/Button/Button';
 
@@ -56,7 +56,7 @@ const Login = (props) => {
 	  }, [enteredPassword]);
 
   return (
-     <Card>
+    <Card className={classes.login}>
       <form onSubmit={submitHandler}>
         <div
           className={`${classes.control} ${
@@ -92,7 +92,7 @@ const Login = (props) => {
           </Button>
         </div>
       </form>
-      </Card>
+    </Card>
   );
 };
 

@@ -6,6 +6,7 @@ import Button from './components/UI/Button/Button';
 import React, {useState, useEffect} from 'react';
 import useButton from './CustomHook/useButton';
 import Login from './components/Login/Login';
+import ContentHolder from './components/UI/ContentHolder/ContentHolder';
 
 function App() {
 
@@ -31,14 +32,23 @@ function App() {
     <>
     <Header />
     <CardConfigure theam="green" size = {'X'} count={1}>
-       <Login />
+    <Login />
     </CardConfigure>
-    <CardConfigure theam="green" count={2}> 
-    <Button onClick={onClick} >{clicked}</Button>
-      <h1> Product Title</h1> 
-      <h2> Product Sub Title</h2>      
-      <p> This is my product description please buy it! </p> 
-      <div>Origin of product: </div>
+    <CardConfigure theam="green" count={2}>
+      <ContentHolder>
+        <Button onClick={onClick} >{clicked}</Button>
+        <h1> Product Title</h1> 
+        <h2> Product Sub Title</h2>      
+        <p> This is my product description please buy it! </p> 
+        <div>Origin of product: </div>
+        <div>Origin of product: </div>
+        <div>Origin of product: </div>
+        <div>Origin of product: </div>
+        </ContentHolder>
+        <h1>This is for second component</h1>
+        <ContentHolder>
+
+        </ContentHolder>
     </CardConfigure>     
       
     <Footer />
