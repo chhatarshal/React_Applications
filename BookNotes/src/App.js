@@ -21,7 +21,7 @@ function App() {
     </Route>
     <Route path="/all">
        <div> Here is list of all books I am reading</div>
-       <AllBooks />
+       <AllBooks fetchDone={false}/>
     </Route>
   </Switch>
   </Layout>
