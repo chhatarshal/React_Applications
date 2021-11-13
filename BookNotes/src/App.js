@@ -4,6 +4,7 @@ import AllBooks from './pages/AllBooks';
 import Login from './components/Login/Login';
 import {useState, useContext} from 'react';
 import AuthContext from './components/Store/auth-context';
+import BookDetails from './pages/BookDetails';
 
 function App() {
    const [login, setLogin] = useState(false);
@@ -22,6 +23,10 @@ function App() {
     <Route path="/all">
        <div> Here is list of all books I am reading</div>
        <AllBooks fetchDone={false}/>
+    </Route>
+    <Route path="/bookdetail">
+         <div>Book Detail is here</div>
+         <BookDetails />
     </Route>
   </Switch>
   </Layout>

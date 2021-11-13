@@ -1,17 +1,31 @@
-import {Link} from 'react-router-dom'
-import {useState} from 'react'
+import {Link, useHistory} from 'react-router-dom'
+import {useState, useContext} from 'react'
+import SearchBook from './SearchBook'
+import AuthContext from '../components/Store/auth-context';
 let fetchDone = false;
+
 const AllBooks = (props) => {
+
+    const history = useHistory();
+
+    const changeSortingHandler = (bookName) => {
+      console.log(bookName, '=========')
+      history.push('/bookdetail?bookname=' + bookName);
+    };
+
     const [allBooksNames, setAllBooksNames] = useState([]);
+    const authCtx = useContext(AuthContext);
+    console.log(authCtx);
     let allBooks = [];
     fetchDone = props['fetchDone'];
+   
     console.log('fetchDone', fetchDone);
-    fetch('http://localhost:8099/booknotes/op/getUser?userId=9', {
+    fetch('http://localhost:8099/booknotes/op/getUser?userId=' + authCtx.loginuserid, {
         method: 'POST',
         body: '',
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyMUAxIiwiZXhwIjoxNjM2NzU5MzkzLCJpYXQiOjE2MzY3MjMzOTN9.Ke0a65thuC9QEh2-YRSOJyULFukTtlzGTHycsU7_vFw'
+          'Authorization': 'Bearer ' + authCtx.token
         },
       })
         .then((res) => {
@@ -31,6 +45,9 @@ const AllBooks = (props) => {
           console.log('data=> ' + data);
           
           data['myBooks'].map(book => {allBooks.push(book.bookName)});
+          if (allBooks.length < 1) {
+              allBooks.push('No book found');
+          }
           if (!fetchDone) {
             setAllBooksNames(allBooks);
             fetchDone = true;
@@ -45,14 +62,14 @@ const AllBooks = (props) => {
 
     return <>
     <h1>All Books</h1>
+    <SearchBook />    
     <ol>
         {
-        allBooksNames.map((val) => <li> 
-            <Link to="/bookdetail">{val}</Link>
+        allBooksNames.map((val) => <li>             
+            <div onClick={() => changeSortingHandler(val)}>{val}</div>
         </li>)
         }
     </ol>
     </>
 }
-
 export default AllBooks;

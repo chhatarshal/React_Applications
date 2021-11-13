@@ -56,12 +56,8 @@ const Login = (props) => {
         if (res.ok) {
           return res.json();
         } else {
-          return res.json().then((data) => {
+            return res.json().then((data) => {
             let errorMessage = 'Authentication failed!';
-            // if (data && data.error && data.error.message) {
-            //   errorMessage = data.error.message;
-            // }
-
             throw new Error(errorMessage);
           });
         }
@@ -71,6 +67,8 @@ const Login = (props) => {
         console.log('data[jwt]=> ' + data["jwt"])
          
         authCtx.login(data["jwt"]);
+        authCtx.token = data["jwt"];
+        authCtx.loginuserid = data["userId"];
         loginState1(true); 
       })
       .catch((err) => {
