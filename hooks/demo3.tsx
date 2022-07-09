@@ -7,10 +7,17 @@ const Demo3 = () => {
     const updateUser = (user:any) => {
         setUser(old => ({name : old.name, age: user.age}));
     }
-
+    // useEffect without dependencies  
+    // This will render every time component re-render 
     useEffect(() => {
         console.log('use effect')
     })
+
+    // useEffect with dependencies  
+    // This will render only once and did not re-render component
+    useEffect(() => {
+        console.log('use effect second')
+    }, [])
 
     return <>
                 <div className="bg-slate-600 p-2 inline-block" onClick={() => {updateUser({age:new Date().getMilliseconds()})}}>Click Me</div>
